@@ -1,0 +1,100 @@
+.overlayContainer {
+    height: 80vh;
+    width: 80vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    z-index: 9995;
+    /* background-color: red; */
+}
+
+.aiFrame {
+    height: 100%;
+    width: 100%;
+    border: none;
+    display: block;
+}
+
+.overlayBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 8888;
+}
+
+.chatBtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    border: 2px whitesmoke solid;
+    background-color: #0B8CFC;
+    color: whitesmoke;
+    z-index: 9999;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.hideBtn {
+    height: 25px;
+    width: 60px;
+    border-radius: 20px;
+    border: 1px #0B8CFC solid;
+    background-color: #061121;
+    color: whitesmoke;
+    z-index: 9999;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.clsBtn {
+    height: 25px;
+    width: 60px;
+    border-radius: 20px;
+    border: 1px #0B8CFC solid;
+    background-color: #061121;
+    color: whitesmoke;
+    z-index: 9999;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 479px) {
+    .overlayContainer {
+        height: 100dvh;
+        width: 100%;
+        background-color: #061121;
+    }
+
+    .hideBtn {
+        height: 25px;
+        width: 70px;
+        border-radius: 20px;
+        top: 1.5rem;
+        right: 6.5rem;
+    }
+    
+    .clsBtn {
+        height: 25px;
+        width: 70px;
+        border-radius: 20px;
+        top: 1.5rem;
+        right: 1rem;
+    }
+    
+}
